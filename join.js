@@ -22,4 +22,7 @@ form.addEventListener("submit", function(event) {
         alert("비밀번호가 일치하지 않습니다.")
         return
     }
+
+    document.body.innerHTML = ""
+    document.write(`<p>${userId}님 환영합니다!</p>`)
 })
